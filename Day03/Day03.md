@@ -49,7 +49,7 @@ h1 {
 ```
 
 
-二、用 CLI 產生子元件 HeroBadge元件
+**二、用 CLI 產生子元件 HeroBadge元件**
 ```sh
 ng g component hero-badge
 ```
@@ -121,4 +121,4 @@ export class App {
 * **樣式沒生效**：請把樣式寫在子元件內
 
 **今日小結：**
-* 你已經掌握 Standalone 元件的核心用法，並能以 imports 串起父子元件。這份清爽的依賴關係，是現代 Angular 的日常。
+* 你已經掌握 Standalone 元件的核心用法，並能以 imports 串起父子元件。
