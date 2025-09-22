@@ -1,29 +1,60 @@
-# Day 1｜系列介紹：重建現代英雄之旅！
+---
+post_title: 'Day 1｜系列介紹：重建現代英雄之旅！'
+author1: '阿蘇'
+post_slug: 'day-01-intro-modern-hero-journey'
+microsoft_alias: 'SZZhang0619'
+featured_image: 'https://angular.io/assets/images/logos/angular/angular.svg'
+categories:
+  - Angular
+tags:
+  - Introduction
+  - Series
+  - Angular
+  - Standalone
+  - Signals
+  - Control Flow
+  - Zoneless
+ai_note: 'This post was assisted by AI (GitHub Copilot).'
+summary: '系列開場，說明目標、內容與預期成果，並介紹將使用的現代 Angular 技術堆疊。'
+post_date: '2025-09-15'
+---
 
 哈囉，各位邦友們！
 接下來的 30 天，我會帶大家用最新的 Angular 技術，從零開始打造一個「英雄管理系統」（Hero Management）。目標很單純，就是希望在 30 天內從零到上線，一步一步把能維護、能部署的作品做出來。
 
-### 為什麼是現在？為什麼是 Angular？
+## 為什麼是現在？為什麼是 Angular？
 因為過去這三年，這幾個版本的 Angular 真的變很多，從 v14 的 Standalone 元件、後續的內建控制流（像 @if/@for）、v16 上線的 Signals，到 v19 的 zoneless 模式...等等。
 
 這個系列將會直接使用以上這些最新的寫法，在有限的時間內打造一個專案。
 
-### 會做什麼？
+## 會做什麼？
 本系列將延續官方「英雄之旅」的教學精神，但會以更現代的 Angular 路線來實作。我們將從專案初始化開始，依序完成以下步驟：
-* 路由規劃：建構應用程式的導航結構。
-* API 串接 (CRUD)：完成英雄資料的新增、讀取、更新和刪除。
-* 表單處理：處理使用者輸入與資料驗證。
-* Signals 狀態管理：運用全新的 Signals 來管理應用的狀態。
-* 測試與部署：確保程式碼的品質，並將最終成品部署上線。
+- 路由規劃：建構應用程式的導航結構。
+- API 串接 (CRUD)：完成英雄資料的新增、讀取、更新和刪除。
+- 表單處理：處理使用者輸入與資料驗證。
+- Signals 狀態管理：運用全新的 Signals 來管理應用的狀態。
+- 測試與部署：確保程式碼的品質，並將最終成品部署上線。
  
-### 這系列的目標
-* 用現代 Angular 做出一個英雄管理系統：列表、詳情、搜尋、CRUD、錯誤處理、最佳化圖片載入、部署一次到位。
-* 建立一條從初始化、路由、HTTP、表單到測試與部署的完整學習路徑。
-* 最後把成品部署到 GitHub Pages，有成果、有連結、能展示。
+## 這系列的目標
+- 用現代 Angular 做出一個英雄管理系統：列表、詳情、搜尋、CRUD、錯誤處理、最佳化圖片載入、部署一次到位。
+- 建立一條從初始化、路由、HTTP、表單到測試與部署的完整學習路徑。
+- 最後把成品部署到 GitHub Pages，有成果、有連結、能展示。
 
-### 適合誰看
+## 適合誰看
 1. 想用 Standalone／內建控制流／Signals 等現代語法學 Angular 的初中階工程師。
 2. 從其他框架轉進來，或學過舊版想更新觀念的開發者。
 3. 喜歡每天 10 到 20 分鐘邊看邊做，當天就有產出的學習者。
 
 如果對內容或實作方向有任何想法，歡迎在留言區提出建議。我自己踏入 Angular 大約三年，還在持續修練中，也希望把這個系列做得更貼近真實專案的需求。一起開工吧！
+
+**參考資料：**
+- Angular Overview（什麼是 Angular？）: 
+  [https://dev.angular.tw/overview](https://dev.angular.tw/overview)
+- Components（元件剖析）: 
+  [https://dev.angular.tw/guide/components](https://dev.angular.tw/guide/components)
+- Signals（訊號）: 
+  [https://dev.angular.tw/guide/signals](https://dev.angular.tw/guide/signals)
+- Control Flow（控制流）: 
+  [https://dev.angular.tw/guide/templates/control-flow](https://dev.angular.tw/guide/templates/control-flow)
+- Angular CLI: 
+  [https://dev.angular.tw/cli](https://dev.angular.tw/cli)

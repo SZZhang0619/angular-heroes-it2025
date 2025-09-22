@@ -1,16 +1,34 @@
-# Day 5｜範本語法：@for 迴圈與 track
+---
+post_title: 'Day 5｜範本語法：@for 迴圈與 track'
+author1: '阿蘇'
+post_slug: 'day-05-template-for-track'
+microsoft_alias: 'SZZhang0619'
+featured_image: 'https://angular.io/assets/images/logos/angular/angular.svg'
+categories:
+  - Angular
+tags:
+  - Control Flow
+  - For Loop
+  - Track
+  - Signals
+  - Template
+ai_note: 'This post was assisted by AI (GitHub Copilot).'
+summary: '使用 @for 渲染列表，搭配 track、$index 與 @empty，處理清單渲染與空狀態。'
+post_date: '2025-09-19'
+---
 
 哈囉，各位邦友們！
 昨天我們把單一 hero 綁到畫面，並用 @if/@else 來控制顯示。
 今天把單一資料改成多筆，學習用 @for 來渲染。
 
-### 今天要做什麼？
+## 今天要做什麼？
 1. 在 App 建立 heroes 清單（signal<Hero[]>）
 2. 用 @for 渲染清單，學會使用track以及$index、$count
 3. 用 @empty 處理空清單狀態
-#### 前置需求
-* 專案可 ng serve
-* Day04 的 hero 物件與 `<app-hero-badge>` 正常
+
+## 前置需求
+- 專案可 ng serve
+- [Day04](https://ithelp.ithome.com.tw/articles/10382892) 的 hero 物件與 `<app-hero-badge>` 正常
 
 **一、建立 heroes 清單**
 ```ts
@@ -105,17 +123,25 @@ li {
 ```
 
 **重點：**
-* @for 基本形態：@for (item of list; track key; let i = $index) { ... } @empty { ... }
-* track請用穩定唯一的 id；否則插入/排序會造成不必要的 DOM 重建。
+- @for 基本形態：@for (item of list; track key; let i = $index) { ... } @empty { ... }
+- track請用穩定唯一的 id；否則插入/排序會造成不必要的 DOM 重建。
 
 **驗收清單：**
-* 畫面顯示 Heroes 與 4 筆清單，含序號與 rank 標示。
-* rank 為 A 或 S 的項目具 is-a 樣式。
-* 將 heroes.set([]) 後，顯示「No heroes.」。
+- 畫面顯示 Heroes 與 4 筆清單，含序號與 rank 標示。
+- rank 為 A 或 S 的項目具 is-a 樣式。
+![https://ithelp.ithome.com.tw/upload/images/20250919/20159238VSIEQLdDij.png](https://ithelp.ithome.com.tw/upload/images/20250919/20159238VSIEQLdDij.png)
+- 將 heroes.set([]) 後，顯示「No heroes.」。
+![https://ithelp.ithome.com.tw/upload/images/20250919/20159238yCraVrGA6I.png](https://ithelp.ithome.com.tw/upload/images/20250919/20159238yCraVrGA6I.png)
 
 **常見錯誤與排查：**
-* heroes 是 signal，範本需呼叫 heroes() 而非 heroes。
+- heroes 是 signal，範本需呼叫 heroes() 而非 heroes。
 
 **今日小結：**
 現在你已經會用 @for 渲染清單，並學會track以及$index、$count等變數的使用，其他的變數可參考[官網](https://dev.angular.tw/api/core/@for)的內容做學習。
 明天會加入事件處理：點擊列表項目選擇英雄，並用 signal 管理「目前選中」的狀態。
+
+**參考資料：**
+- Control Flow（控制流）:
+  [https://dev.angular.tw/guide/templates/control-flow](https://dev.angular.tw/guide/templates/control-flow)
+- Signals（訊號）:
+  [https://dev.angular.tw/guide/signals](https://dev.angular.tw/guide/signals)
