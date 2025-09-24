@@ -28,7 +28,7 @@ post_date: '2025-09-22'
 3. 在元件中使用 inject(HeroService) 取得服務。
 
 ## 前置需求
-- 已完成 Day05（清單）、Day06（選取）、Day07（編輯）。
+- 已完成 [Day05](https://ithelp.ithome.com.tw/articles/10383468)（清單）、[Day06](https://ithelp.ithome.com.tw/articles/10384071)（選取）、[Day07](https://ithelp.ithome.com.tw/articles/10384956)（編輯）。
 - 專案可 ng serve，互動流程正常。
 
 **一、建立 HeroService**
@@ -113,10 +113,10 @@ export class App {
 }
 ```
 
-**三、Provider 範圍與設計思維**
+**說明：**
 - providedIn: 'root'：在根級別提供服務，建立單個共享實例，並將其注入到任何請求它的類別中。
 - Component.providers：在 @Component 級別提供服務，使服務可用於此元件的所有實例以及在範本中使用的其他元件和指令。
-- 關注點分離：資料與處理邏輯放服務；畫面顯示與UX互動留在元件。
+- 資料與處理邏輯放服務；畫面顯示與UX互動留在元件。
 
 **驗收清單：**
 - heroes 改由 HeroService 提供，畫面與互動維持不變。
@@ -125,8 +125,7 @@ export class App {
 
 **常見錯誤與排查：**
 - 注入失敗：確認 @Injectable 與 providedIn: 'root' 設定正確。
-- 畫面不更新：請使用 this.heroes.update() 與 this.selectedHero.set()，
-  避免直接改物件屬性（保持不可變更新）。
+- 畫面不更新：請使用 this.heroes.update() 與 this.selectedHero.set()，。
 - 型別不一致：從 hero.service.ts 匯出並統一使用 Hero 型別。
 - 匯入路徑錯誤：import { HeroService } from './hero.service' 檔名需對應。
 
