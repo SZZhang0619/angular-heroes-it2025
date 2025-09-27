@@ -236,7 +236,7 @@ export class HeroesComponent {
 
 **參考資料：**
 - withComponentInputBinding:
-[https://dev.angular.tw/api/router/withComponentInputBinding](https://dev.angular.tw/api/router/withComponentInputBinding)
+  [https://dev.angular.tw/api/router/withComponentInputBinding](https://dev.angular.tw/api/router/withComponentInputBinding)
 - Signal Inputs:
   [https://dev.angular.tw/guide/components/inputs](https://dev.angular.tw/guide/components/inputs)
 - RouterLink:
