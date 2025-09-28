@@ -309,7 +309,81 @@ export class HeroesComponent {
 }
 ```
 
-**四、樣式：讓新增區域與錯誤訊息易讀**
+**四、In-memory API：回傳更新值搭配預設資料**
+```typescript
+// src/app/app.config.ts
+import { ApplicationConfig, importProvidersFrom, provideBrowserGlobalErrorListeners, provideZonelessChangeDetection } from '@angular/core';
+import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import { provideRouter, withComponentInputBinding } from '@angular/router';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { routes } from './app.routes';
+import { InMemoryData } from './in-memory-data';
+
+export const appConfig: ApplicationConfig = {
+  providers: [
+    provideRouter(routes, withComponentInputBinding()),
+    provideBrowserGlobalErrorListeners(),
+    provideZonelessChangeDetection(),
+    provideHttpClient(withFetch()),
+    importProvidersFrom(
+      HttpClientInMemoryWebApiModule.forRoot(InMemoryData, {
+        dataEncapsulation: false,
+        delay: 300,
+        post204: false,
+        put204: false,
+      })
+    ),
+    provideClientHydration(withEventReplay())
+  ],
+};
+```
+
+```typescript
+// src/app/in-memory-data.ts
+import { Injectable } from '@angular/core';
+import { InMemoryDbService } from 'angular-in-memory-web-api';
+
+export type Hero = { id: number; name: string; rank?: string };
+
+const DEFAULT_HEROES: Hero[] = [
+  { id: 11, name: 'Dr Nice', rank: 'B' },
+  { id: 12, name: 'Narco', rank: 'A' },
+  { id: 13, name: 'Bombasto', rank: 'S' },
+  { id: 14, name: 'Celeritas', rank: 'A' },
+  { id: 15, name: 'Magneta', rank: 'B' },
+];
+
+@Injectable({
+  providedIn: 'root',
+})
+export class InMemoryData implements InMemoryDbService {
+  createDb() {
+    return {
+      heroes: DEFAULT_HEROES.map((hero) => ({ ...hero })),
+    };
+  }
+
+  genId(collection: Hero[]): number {
+    if (collection.length === 0) {
+      return 11;
+    }
+
+    const maxId = collection.reduce(
+      (max, hero) => (hero.id > max ? hero.id : max),
+      0
+    );
+
+    return maxId + 1;
+  }
+}
+```
+
+**重點：**
+- `post204/put204` 設為 `false`，確保 POST/PUT 會回傳實體資料，方便畫面同步更新。
+- 假後端保留一份預設英雄清單，每次啟動時重新產生，對應練習需求即可。
+
+**五、樣式：讓新增區域與錯誤訊息易讀**
 ```scss
 /* src/app/heroes/heroes.component.scss */
 /* ...existing code... */
@@ -342,7 +416,6 @@ export class HeroesComponent {
 ![https://ithelp.ithome.com.tw/upload/images/20250927/20159238jtcACMbleA.png](https://ithelp.ithome.com.tw/upload/images/20250927/20159238jtcACMbleA.png)![https://ithelp.ithome.com.tw/upload/images/20250927/20159238hNExwnVGi1.png](https://ithelp.ithome.com.tw/upload/images/20250927/20159238hNExwnVGi1.png)
 - 選中某個英雄後修改名稱並按 Save，列表與選取區同時更新。
 ![https://ithelp.ithome.com.tw/upload/images/20250927/20159238mDhlj0pXeF.png](https://ithelp.ithome.com.tw/upload/images/20250927/20159238mDhlj0pXeF.png)![https://ithelp.ithome.com.tw/upload/images/20250927/20159238Wdn0Bfit76.png](https://ithelp.ithome.com.tw/upload/images/20250927/20159238Wdn0Bfit76.png)
-- 重新整理頁面可從 in-memory API 讀到剛新增或修改的資料（確認 POST/PUT 生效）。
 **常見錯誤與排查：**
 - 按下按鈕毫無反應：檢查 `ngSubmit="addHero()"` 與 `(click)="saveSelected()"` 是否綁定正確，或是否因為 `minlength` 驗證沒通過。
 - 儲存後畫面未更新：確保在訂閱成功回呼中有呼叫 `heroes.update(...)` 與 `selectedHero.set(updated)`。
