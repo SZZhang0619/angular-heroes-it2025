@@ -1,0 +1,4 @@
+[submodule "projects/hero-journey"]
+	path = projects/hero-journey
+	url = git@github.com:SZZhang0619/hero-journey.git
+	branch = main
