@@ -1,5 +1,5 @@
 ---
-post_title: 'Day 16｜非同步處理：RxJS Operators 即時體驗'
+post_title: 'Day 16｜非同步處理：RxJS Operators 即時搜尋'
 author1: '阿蘇'
 post_slug: 'day-16-rxjs-operators-search'
 microsoft_alias: 'SZZhang0619'
