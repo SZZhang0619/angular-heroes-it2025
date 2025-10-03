@@ -14,7 +14,7 @@ tags:
   - provideRouter
   - withComponentInputBinding
 ai_note: 'This post was assisted by AI (GitHub Copilot).'
-summary: '建立 app.routes.ts、註冊 provideRouter、加入 router-outlet 與導航，完成 Dashboard 與 Heroes 的頁面切換，為 Day11 的路由參數綁定鋪路。'
+summary: '建立 app.routes.ts 並註冊 provideRouter，完成 Dashboard 與 Heroes 的路由導覽。'
 post_date: '2025-09-24'
 ---
 

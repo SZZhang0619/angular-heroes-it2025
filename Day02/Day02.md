@@ -14,7 +14,7 @@ tags:
   - Project Structure
   - TypeScript Paths
 ai_note: 'This post was assisted by AI (GitHub Copilot).'
-summary: '用最新 Angular CLI 建立 Standalone 專案並認識核心檔案與目錄，含 SSR 與 zoneless 設定。'
+summary: '使用 Angular CLI v19 建立 Standalone 專案，導覽核心設定並示範啟用 SSR 與 zoneless。'
 post_date: '2025-09-16'
 ---
 

@@ -14,7 +14,7 @@ tags:
   - Class Binding
   - Signals
 ai_note: 'This post was assisted by AI (GitHub Copilot).'
-summary: '在範本中展示資料綁定與 @if/@else 控制，涵蓋 [prop]、[attr.xxx]、[class.xxx] 與 signals。'
+summary: '運用插值、屬性與樣式綁定搭配 `@if`/`@else`，以 signals 切換畫面狀態。'
 post_date: '2025-09-18'
 ---
 

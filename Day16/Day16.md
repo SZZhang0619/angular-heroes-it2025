@@ -15,7 +15,7 @@ tags:
   - distinctUntilChanged
   - HttpClient
 ai_note: 'This post was assisted by AI (GitHub Copilot).'
-summary: '在 HeroService 與 Heroes 頁導入搜尋流程，利用 Subject 搭配 debounceTime/distinctUntilChanged/switchMap，打造即時又節流的英雄搜尋體驗。'
+summary: '利用 Subject 搭配 debounceTime、distinctUntilChanged、switchMap 打造即時搜尋流程。'
 post_date: '2025-09-30'
 ---
 

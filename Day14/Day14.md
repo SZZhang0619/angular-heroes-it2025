@@ -13,7 +13,7 @@ tags:
   - RxJS
   - Signals
 ai_note: 'This post was assisted by AI (GitHub Copilot).'
-summary: '擴充 HeroService 的 delete$ 與錯誤回饋，在 Heroes 頁結合 catchError、UI 提示與狀態管理，補齊 CRUD 並建立可靠的錯誤處理流程。'
+summary: '擴充 delete$ 與 catchError，提供刪除成功與錯誤提示，補齊 CRUD 流程。'
 post_date: '2025-09-28'
 ---
 

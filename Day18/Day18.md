@@ -13,7 +13,7 @@ tags:
   - RxJS
   - UI
 ai_note: 'This post was assisted by AI (GitHub Copilot).'
-summary: '全面檢視這週完成的 CRUD 與 UI 功能，整理 HeroService 與 Heroes 程式碼，並在細節頁導入 NgOptimizedImage，作為第二個學習檢查點與 Day17 挑戰的解答。'
+summary: '重構 HeroService 與 Heroes 程式碼，導入 NgOptimizedImage 頭像並回應挑戰日需求。'
 post_date: '2025-10-02'
 ---
 

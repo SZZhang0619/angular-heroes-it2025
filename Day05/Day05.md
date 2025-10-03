@@ -13,7 +13,7 @@ tags:
   - Signals
   - Template
 ai_note: 'This post was assisted by AI (GitHub Copilot).'
-summary: '使用 @for 渲染列表，搭配 track、$index 與 @empty，處理清單渲染與空狀態。'
+summary: '以 `@for` 渲染英雄清單，示範 track、`$index` 與 `@empty` 處理列表與空狀態。'
 post_date: '2025-09-19'
 ---
 

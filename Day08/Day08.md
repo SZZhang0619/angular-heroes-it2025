@@ -13,7 +13,7 @@ tags:
   - inject
   - Signals
 ai_note: 'Assisted by AI and reviewed by the author.'
-summary: '把英雄資料從元件抽離到 HeroService，理解依賴注入與 inject()，維持 Day05-07 功能不變並為 Day09 的 Observable 鋪路。'
+summary: '把英雄資料搬到 HeroService，比較 constructor 與 inject() 注入方式並維持既有互動。'
 post_date: '2025-09-22'
 ---
 

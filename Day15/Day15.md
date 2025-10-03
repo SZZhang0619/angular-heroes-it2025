@@ -14,7 +14,7 @@ tags:
   - HttpClient
   - Signals
 ai_note: 'This post was assisted by AI (GitHub Copilot).'
-summary: '建立共用 LoadingSpinner 元件，調整 Heroes 模板與樣式，提供載入與空清單的視覺回饋，確保 CRUD 體驗更順手。'
+summary: '建立 LoadingSpinner 元件並重構模板，呈現載入與空清單的使用者回饋。'
 post_date: '2025-09-29'
 ---
 

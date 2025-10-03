@@ -14,7 +14,7 @@ tags:
   - Signals
   - FormsModule
 ai_note: 'This post was assisted by AI (GitHub Copilot).'
-summary: '在 HeroService 實作 create$/update$，於 Heroes 頁整合表單與狀態，完成 POST/PUT 的資料流，為 Day14 的刪除與錯誤處理鋪路。'
+summary: '在 HeroService 完成 create$/update$，整合表單與狀態更新打造 POST/PUT 資料流。'
 post_date: '2025-09-27'
 ---
 

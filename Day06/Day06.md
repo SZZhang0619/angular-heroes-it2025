@@ -12,7 +12,7 @@ tags:
   - EventBinding
   - TemplateSyntax
 ai_note: 'Assisted by AI and reviewed by the author.'
-summary: '在英雄列表中加入點擊事件，使用 signal 管理選中狀態，並以 @if 顯示當前選中英雄。為 Day07 的 ngModel 編輯鋪路。'
+summary: '加入 `(click)` 事件搭配 signal 管理選取英雄，並以 `@if` 顯示詳情區塊。'
 post_date: '2025-09-20'
 ---
 

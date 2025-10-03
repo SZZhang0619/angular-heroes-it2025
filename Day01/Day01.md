@@ -15,7 +15,7 @@ tags:
   - Control Flow
   - Zoneless
 ai_note: 'This post was assisted by AI (GitHub Copilot).'
-summary: '系列開場，說明目標、內容與預期成果，並介紹將使用的現代 Angular 技術堆疊。'
+summary: '系列開場，說明官方英雄之旅停更的背景，訂定 30 天的學習範圍並預告 Standalone、Signals、Zoneless 等現代技術。'
 post_date: '2025-09-15'
 ---
 

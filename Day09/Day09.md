@@ -13,7 +13,7 @@ tags:
   - takeUntilDestroyed
   - Signals
 ai_note: 'This post was assisted by AI (GitHub Copilot).'
-summary: '將 HeroService 的資料讀取改為 Observable，於元件中訂閱並處理 Loading 與 Error，為 Day10 路由與 Day12 HTTP 鋪路。'
+summary: '讓 HeroService 回傳 Observable，於元件處理 loading 與 error，建立非同步基礎。'
 post_date: '2025-09-23'
 ---
 

@@ -14,7 +14,7 @@ tags:
 	- RouterLink
 	- Standalone
 ai_note: 'This post was assisted by AI (GitHub Copilot).'
-summary: '新增 /detail/:id 路由，透過 withComponentInputBinding 將路由參數自動綁到元件 @Input（或 signal input），完成英雄詳細頁並從清單導覽。'
+summary: '新增 /detail/:id，透過 withComponentInputBinding 將路由參數綁到 @Input 或 signal，串接詳情頁。'
 post_date: '2025-09-25'
 ---
 

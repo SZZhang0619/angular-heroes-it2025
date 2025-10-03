@@ -13,7 +13,7 @@ tags:
   - Decorator
   - Angular CLI
 ai_note: 'This post was assisted by AI (GitHub Copilot).'
-summary: '認識 @Component 結構，建立子元件 HeroBadge 並以 imports 串接父子元件。'
+summary: '拆解 @Component 裝飾器，建立 HeroBadge 子元件並透過 imports 組合畫面。'
 post_date: '2025-09-17'
 ---
 

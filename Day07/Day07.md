@@ -13,7 +13,7 @@ tags:
   - TemplateDrivenForms
   - Recap
 ai_note: 'Assisted by AI and reviewed by the author.'
-summary: '在元件內以 ngModel 編輯英雄名稱，。'
+summary: '在 Standalone 元件引入 FormsModule，使用 ngModel 即時編輯選取英雄並加上基本驗證。'
 post_date: '2025-09-21'
 ---
 

@@ -13,7 +13,7 @@ tags:
 	- RxJS
 	- Standalone
 ai_note: 'This post was assisted by AI (GitHub Copilot).'
-summary: '導入 provideHttpClient()，以 HttpClient 取代本地模擬資料，並使用 angular-in-memory-web-api 建立可開發用的假後端。為 Day13/14 的 CRUD 與錯誤處理奠基。'
+summary: '導入 provideHttpClient() 與 HttpClient，搭配 angular-in-memory-web-api 建立可開發的假後端。'
 post_date: '2025-09-26'
 ---
 
